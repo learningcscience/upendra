@@ -1,0 +1,425 @@
+
+<!doctype html>
+<html>
+
+
+<head>
+	<title>  Upendra Shahai | Home </title>
+
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel = "icon" href ="pic/logo.png"type = "image/x-icon">
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			font-family: 'Fira Sans', sans-serif;
+		}
+		.nav a{
+			text-decoration: none;
+			padding: 20px;
+			font-size: 20px;
+			color: white;
+			font-family: 'Barlow', sans-serif;		
+		}
+		
+		.nav{
+			background-color:#212922;
+			padding: 40px;
+			position: fixed; 
+			top:0;
+			z-index:1;
+			left: 0;
+			width: 100%;
+			box-shadow: 4px 17px 20px rgb(158 158 158 / 34%);
+		}
+		label{
+			display: none;
+		}
+		[class*="col"]{
+
+			float:left;
+			padding: 15px;
+		}
+		#social{
+			font-size: 30px;
+		}
+		.row::after {
+			  content: "";
+  			  clear: both;
+  			  display: table;
+		}
+		.row{
+			text-align: center;
+		}
+
+		h1{
+			text-align: center;
+		}
+
+		form{
+
+			text-align: center;
+		}
+		input#date {
+    			width: 64%;
+		}
+		input[type="text"] {
+    			width: 30%;
+    			padding: 10px;
+		}
+		input[type="email"], input[type="password"]{
+    			width: 30%;
+   	 		padding: 10px;
+		}
+		input[type="date"]{
+			width: 64%;
+			padding: 10px;
+		}
+		input[type="submit"] {
+    			width: 64%;
+    			font-size: 20px;
+    			padding: 10px;
+			border: none;
+			cursor: pointer;
+			background-color: #0f9d58;
+			color: white;
+		}
+		::placeholder{
+			text-align: center;
+		}		
+		span{
+			color: darkblue;
+			cursor: pointer;
+		}
+		.footer{
+			background: black;
+			text-align: center;
+		}
+		h3{
+			color: white;
+			font-size: 30px;
+		}
+		.fa{
+			color: white;
+		}
+		p.top{
+			display: none;
+		}
+		.footer a{
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+			
+		}
+		p.ftext{
+			color: white;
+			font-size: 20px;
+		}
+		i.fa.fa-reddit {
+    			font-size: 25px;
+    			background: #cccccc63;
+    			padding: 10px;
+			margin:20px 10px;
+    			border-radius: 50%;
+		}
+
+		i.fa.fa-vimeo {
+    			font-size: 25px;
+    			background: #cccccc63;
+    			padding: 10px;
+			margin:20px 10px;
+    			border-radius: 50%;
+		}
+
+		i.fa.fa-rss {
+    			font-size: 25px;
+    			background: #cccccc63;
+    			padding: 10px;
+			margin:20px 10px;
+    			border-radius: 50%;
+		}
+		
+		i.fa.fa-skype {
+    			font-size: 25px;
+    			background: #cccccc63;
+    			padding: 10px;
+			margin:20px 10px;
+    			border-radius: 50%;
+		}		
+
+		h1.head{
+			font-size: 2.3em;
+			color: white;
+			float: left;
+		}
+		p#demo{
+			display: none;
+			font-size: 20px;
+			text-align: center;
+		}
+		.login{
+			text-align: center;
+		}
+		.fa-twitter {
+  			background: #55ACEE;
+  			color: white;
+			padding: 20px;
+			font-size: 30px;
+  			width: 10px 50px;
+			text-decoration: none;
+		}
+		.fa-facebook{
+			background: #3B5998;
+  			color: white;
+			padding: 20px;
+			font-size: 30px;
+  			width: 10px 50px;
+			text-decoration: none;
+		}
+		.fa-google {
+  			background: #dd4b39;
+  			color: white;
+			padding: 20px;
+			font-size: 30px;
+  			width: 10px 50px;
+			text-decoration: none;
+		}
+		
+		.fa-linkedin {
+  			background: #007bb5;
+  			color: white;
+			padding: 20px;
+			font-size: 30px;
+  			width: 10px 50px;
+			text-decoration: none;
+		}
+		.fa-pinterest {
+  			background: #cb2027;
+  			color: white;
+			padding: 20px;
+			font-size: 30px;
+  			width: 10px 50px;
+			text-decoration: none;
+		}
+		.fa-instagram {
+  			background: linear-gradient(to bottom, #33ccff 4%, #ff6699 65%);
+  			color: white;
+			padding: 20px;
+			font-size: 30px;
+  			width: 10px 50px;
+			text-decoration: none;
+		}
+		.fa-snapchat{
+  			background: yellow;
+  			color: white;
+			padding: 20px;
+			font-size: 30px;
+  			width: 10px 50px;
+			text-decoration: none;
+		}
+		.fa-youtube{
+  			background: red;
+  			color: white;
+			padding: 20px;
+			font-size: 30px;
+  			width: 10px 50px;
+			text-decoration: none;
+		}
+		.fa:hover{
+			opacity: 0.6;
+		}
+		p.foot{
+			background: black;
+			color: white;
+			font-size: 20px;
+			padding: 3%;
+			text-align: center;
+		}
+		.col-1 {width: 8.33%;}
+		.col-2 { width: 16.66%; }
+		.col-3 { width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%; }
+		.col-9 {width: 75%;}
+		.col-10 { width: 83.33%; }
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+
+
+
+		@media only screen and (max-width: 450px){
+
+
+			[class*="col"]{
+
+				width: 100%;
+
+			}
+			label{
+				display: block;
+			}
+
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+
+			h1.head{
+				display: block;
+				float: left;
+				font-size: 30px;
+			}
+
+			input[type="email"], input[type="password"], input[type="text"] {
+
+				border: 2px solid #ccc;
+				width: 100%;
+				margin: 10px;
+			}
+			input#date{
+				width: 100%;
+				border: 2px solid #ccc;
+			}
+			input[type="submit"]{
+				width: 50%;
+			}
+			#social{
+				font-size: 20px;
+			}
+			.login{
+				display: none;
+				
+			}
+
+
+		}
+
+	</style>
+</head>
+
+<body>
+
+
+	
+	<div class="nav" id="navigation">
+		<h1 class="head"> Upendra Shahi </h1>
+		
+		</a>
+
+
+	</div>
+	
+<br><br><br><br><br><br><br><br><br>
+
+
+<div class="account">
+
+	<h1> Sign Up</h1><br><br>
+	 	<form> 
+
+		<label> First Name</label>
+			<input type="text" placeholder="First Name">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+		<label> sure  Name</label>
+			<input type="text" placeholder="Sure Nmae"><br><br>
+
+
+		<label>  Email or phone </label>
+			<input type="email" placeholder=" Enter email or phone" name="phone"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+		<label>  Password</label>
+			<input type="password" placeholder="Enter Password" name="password"> 
+			<br><br>
+			<label> Date Of Birth</label>
+			
+		 	  
+ 		 <input placeholder="Type Date" type="text" id="date">
+
+			<br><br>
+			<input type="submit" value="continue">
+
+		<form>
+</div>
+	
+<br><br>
+
+<div class="login">
+
+<strong><p onclick="clicked()"id="social"><span>Click me </span> to login with social medias</p></strong><br><br>
+<p id="demo">
+<a href="#" class="fa fa-facebook"></a>&nbsp &nbsp &nbsp
+<a href="#" class="fa fa-twitter"></a>&nbsp &nbsp &nbsp
+<a href="#" class="fa fa-google"></a>&nbsp &nbsp &nbsp
+<a href="#" class="fa fa-linkedin"></a><br><br>&nbsp &nbsp &nbsp
+<a href="#" class="fa fa-pinterest"></a>&nbsp &nbsp &nbsp
+<a href="#" class="fa fa-snapchat"></a>&nbsp &nbsp &nbsp
+<a href="#" class="fa fa-instagram"></a>&nbsp &nbsp &nbsp
+<a href="#" class="fa fa-youtube"></a>&nbsp &nbsp &nbsp
+</p>
+	
+</div>
+	
+	
+<br><br>
+
+<div class="footer col-12">
+		<div class="col-4">
+			<h3> Useful links </h3><br>
+				<a href="index.html"> Home </a><br><br>
+
+				<a href="#//about"> About Me</a><br><br>
+
+				<a href="#contact"> Contact Me</a><br><br>
+
+				<a href="#plan"> Future Plans </a>
+
+		</div>
+		<div class="col-4">
+			<h3> Connect in</h3><br><br><br>
+				<i class="fa fa-reddit"></i>
+				<i class="fa fa-vimeo"></i>
+				<i class="fa fa-rss"></i>
+				<i class="fa fa-skype"></i>
+				
+
+		</div>
+		<div class="col-4">
+			<h3> About us </h3><br>
+				<p class="ftext"> We are the team of nnsc (web developer).<br>
+					            We design responsive professional website.<br>
+					            Similarly today we Created this website the<br>
+					            blog of upendra shahi </p>
+		</div>
+		
+	
+</div>
+	
+	<p class="foot">&copy; All rights reserved 2021 Upendra shahi</p>
+
+	<script>
+
+
+		function clicked() {
+  			document.getElementById("demo").style.display = "block";
+		}
+
+
+ 	
+	</script>
+</body>
+
+</html>
